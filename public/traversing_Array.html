@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data = [1,10,12,0,7,8,9,15,16,20];
+        function ElementClick()
+        {  
+           var el = document.getElementById("element").value;
+           if(el<data.length && typeof parseInt(el)==="number"){
+             alert(data[el])
+           }else{
+            alert('Please Enter Valid Number')
+           }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="element"> <button onclick="ElementClick()">Element</button>
+</body>
+</html>
